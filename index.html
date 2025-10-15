@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Victoria Cano-Sánchez</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="logoVictoria.jpeg" type="image/jpeg" />
+
+        <!-- W3CSS -->
+        <link rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css" />
+
+        <!-- Font Awesome 6.5.2 (incluye fa-x-twitter y fa-orcid) -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+        <!-- Estilos propios -->
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body class="w3-content" style="max-width:1600px">
+        <!-- Topbar móvil -->
+        <header class="topbar w3-bar w3-large">
+            <button
+                class="w3-bar-item w3-button"
+                aria-controls="barra"
+                aria-expanded="false"
+                onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <span class="w3-bar-item">Menu</span>
+        </header>
+
+        <!-- Barra lateral -->
+        <nav
+            class="w3-sidebar w3-bar-block w3-animate-left w3-collapse w3-top w3-center barra-lateral"
+            id="barra"
+            aria-label="Navegación lateral">
+            <img
+                src="logoVictoria.jpeg"
+                alt="Victoria Cano-Sánchez"
+                class="foto-perfil" />
+
+            <div class="iconos-contacto" aria-label="Enlaces de contacto">
+                <a href="mailto:vcs.canosanchez@gmail.com" aria-label="Email"><i
+                        class="fa fa-envelope"></i></a>
+                <a
+                    href="https://x.com/viccanosanchez"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a
+                    href="https://orcid.org/0009-0003-0130-0849"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                <a
+                    href="https://scholar.google.com/citations?user=PpdPCG8AAAAJ&hl=en"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Google Scholar"><i
+                        class="fa fa-graduation-cap"></i></a>
+                <a
+                    href="https://www.researchgate.net/profile/Victoria_Cano-Sanchez"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="ResearchGate"><i
+                        class="fab fa-researchgate"></i></a>
+            </div>
+
+            <h3 class="w3-center" style="margin-top:0;">
+                <b>Victoria<br />Cano-Sánchez</b>
+            </h3>
+
+            <a
+                href="#acerca"
+                class="w3-bar-item w3-button enlace-menu"
+                onclick="navigate('acerca')">ABOUT ME</a>
+            <a
+                href="#investigacion"
+                class="w3-bar-item w3-button enlace-menu"
+                onclick="navigate('investigacion')">RESEARCH</a>
+            <a
+                href="CV-VictoriaCanoSanchez.pdf"
+                target="_blank"
+                rel="noopener"
+                class="w3-bar-item w3-button enlace-menu">CV</a>
+            <a
+                href="#medios"
+                class="w3-bar-item w3-button enlace-menu"
+                onclick="navigate('medios')">MEDIA</a>
+        </nav>
+
+        <!-- Contenido principal -->
+        <main class="principal" id="principal" role="main">
+            <!-- ABOUT ME -->
+            <section class="w3-container seccion" id="acerca">
+                <div class="contenido">
+                    <!-- HERO MÓVIL/TABLET (<=1024px): Título arriba, foto, nombre -->
+                    <div class="mobile-hero"
+                        aria-label="Presentación en móvil y tablet">
+                        <h1 class="mobile-title"><b>About Me</b></h1>
+                        <img
+                            src="logoVictoria.jpeg"
+                            alt="Victoria Cano-Sánchez"
+                            class="mobile-hero__img" />
+                        <h2 class="mobile-hero__name">Victoria Cano-Sánchez</h2>
+                    </div>
+
+                    <!-- Título para escritorio -->
+                    <h1 class="desktop-title"><b>About Me</b></h1>
+
+                    <p>Welcome! I am a postdoctoral language researcher at the
+                        Universitat
+                        de les Illes Balears (UIB) and a member of the Gogo
+                        Elebiduna and
+                        BASLA Linguistics research groups. My research lies at
+                        the
+                        intersection of psycholinguistics and cognitive aging,
+                        with a
+                        particular focus on how language is processed and
+                        maintained across
+                        the lifespan. I currently collaborate with Prof. Pedro
+                        Guijarro on
+                        the projec <i>Language Loss and End-State
+                            Acquisition</i>, which
+                        investigates language decline and stabilization in late
+                        bilingualism.</p>
+
+                    <p>To explore this topic, I use a wide range of statistical,
+                        behavioral, and experimental methods to better
+                        understand language
+                        processing, with a strong emphasis on eye-tracking and,
+                        more
+                        recently, electroencephalography (EEG) methods. I have
+                        also worked
+                        with a wide range of populations—including young and
+                        older adults,
+                        monolinguals, bilinguals, and currently, heritage
+                        speakers—to
+                        examine how age, individual differences and linguistic
+                        background
+                        influence sentence comprehension and syntactic
+                        processing.</p>
+
+                    <p>I hold an International Ph.D. in Linguistics <i>(Cum
+                            Laude)</i> from the
+                        University of the Basque Country (UPV/EHU). My
+                        dissertation,<i>
+                            Age-Related Differences in Language Processing:
+                            Eye-Tracking
+                            Sentence Reading Patterns in Spanish</i>, was
+                        supervised by Dr.
+                        Mikel Santesteban and Prof. Itziar Laka. Prior to my
+                        doctoral
+                        studies, I earned a B.A. in Translation and Interpreting
+                        (University
+                        of Málaga, Spain), and several master’s degrees: in
+                        Legal
+                        Translation (University of Córdoba, Spain), Language
+                        Teaching
+                        (University of Alicante, Spain), and Theoretical and
+                        Experimental
+                        Linguistics (UPV/EHU, Basque Country)—an academic path
+                        shaped by my
+                        inherently curious and inquisitive nature, and a
+                        constant drive to
+                        learn and explore new disciplines.</p>
+
+                    <p>Before entering academia full-time, I taught in the
+                        public
+                        secondary education systems in Spain and France, founded
+                        VCS
+                        Traducciones and worked as a freelance translator for
+                        institutions
+                        such as CSIC, FISABIO, and KONGSBERG MARITIME.</p>
+
+                    <p><b>I am currently on the academic job market for the
+                            2025–2026 cycle</b>
+                        and open to research and teaching opportunities in
+                        linguistics,
+                        psycholinguistics, neurolinguistics and cognitive
+                        science.</p>
+
+                    <div class="pie">
+                        Last update: 20/09/2025.<br />
+                        2025 Victoria Cano-Sánchez. All rights reserved.
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESEARCH -->
+            <section class="w3-container seccion" id="investigacion">
+                <div class="contenido">
+                    <h1><b>Research</b></h1>
+                    <p>My research centers on fundamental questions about how
+                        language is
+                        processed across the lifespan and how predictive
+                        mechanisms support
+                        comprehension. How do humans anticipate upcoming words
+                        and
+                        structures during real-time language processing? To what
+                        extent are
+                        these mechanisms affected by healthy aging, and how are
+                        they shaped
+                        by lifelong linguistic experience and cognitive
+                        resources? To
+                        address these questions, I have so far combined
+                        behavioral and
+                        attentional methods (e.g., eye-tracking) with an
+                        increasing focus on
+                        neuroimaging techniques (EEG, fMRI, MEG) to investigate
+                        predictive
+                        processing at both lexical and morphosyntactic levels.
+                        While most of
+                        my work has so far focused on sentence reading in
+                        Spanish, I
+                        aim to extend these findings to typologically diverse
+                        languages in
+                        order to generate cross-linguistically robust
+                        conclusions.</p>
+
+                    <h3>1. Healthy aging</h3>
+                    <p>In the domain of healthy aging, my work examines how
+                        age-related
+                        changes in cognition interact with linguistic experience
+                        to shape
+                        predictive processing. Rather than assuming uniform
+                        decline, I
+                        investigate the balance between preserved abilities,
+                        potential
+                        improvements, and resource-driven limitations. My
+                        findings suggest
+                        that lexical prediction benefits more directly from
+                        accumulated
+                        linguistic experience, whereas morphosyntactic
+                        prediction is more
+                        constrained by working memory and attentional control.
+                        By combining
+                        eye-tracking evidence of real-time comprehension with
+                        behavioral
+                        data, I have shown that older adults’ prediction
+                        abilities depend
+                        not only on age but also on factors individual
+                        differences such as
+                        vocabulary knowledge and reading habits. Building on
+                        these insights,
+                        my future research will integrate fMRI, MEG, and EEG to
+                        capture the neural dynamics underlying predictive
+                        mechanisms, thus
+                        offering a more comprehensive view of performance and
+                        brain activity
+                        in aging. These efforts will also aim to determine when
+                        along the
+                        aging spectrum cognitive abilities begin to decline and
+                        how
+                        linguistic experience may offset such decline. In this
+                        regard,
+                        the study of older heritage speakers and late bilinguals
+                        offers a particularly compelling opportunity. Late
+                        bilinguals (e.g.,
+                        Spanish speakers who immigrated to Latin America in
+                        adulthood)
+                        follow an aging trajectory similar to monolingual older
+                        adults, but
+                        their experience with Spanish grows more slowly.
+                        Heritage speakers,
+                        meanwhile, often process Spanish as a non-dominant
+                        language, with
+                        fewer resources and reduced literacy exposure, but
+                        richer oral
+                        language experience. Studying these populations will
+                        allow me to
+                        disentangle resource-based versus experience-based
+                        effects on
+                        predictive processing. My work on this topic has
+                        included so far:</p>
+
+                    <ul>
+                        <li><b>Cano-Sánchez, V.</b>, Laka, I. & Santesteban, M.
+                            (under
+                            review.) Predictive abilities in language
+                                processing in the
+                                healthy elderly brain: a focus on lexical and
+                                morphosyntactic
+                                processing.<i> Journal of Language,
+                                Cognition and
+                                Neuroscience.</i>
+                        </li>
+                        <li><b>Cano-Sánchez, V.</b>, Laka, I. & Santesteban, M.
+                            (in prep.).<i> Word anticipation across the lifespan: evidence from natural reading."</i>
+                        </li>
+                    </ul>
+
+                    <h3>2. Bilingualism & sociolinguistic perspective</h3>
+                    <p>Beyond monolingual aging, I investigate how bilingualism
+                        modulates
+                        predictive processing. Lifelong management of two
+                        languages may
+                        reshape executive control and influence the balance
+                        between lexical
+                        and morphosyntactic prediction. Exploring these
+                        questions helps
+                        disentangle the interplay between cognitive resources
+                        and language
+                        experience, providing a broader understanding of how
+                        language
+                        processing adapts across diverse populations. <b>Another
+                            strand of
+                            my research within this area has focused on
+                            sociolinguistic
+                            contexts</b>, examining regional languages in Spain,
+                        such as
+                        Valencian, to study the patterns of language use and
+                        maintenance
+                        among the youngest populations. This perspective
+                        highlights the
+                        importance of considering not only bilingualism itself,
+                        but also the
+                        sociolinguistic environments in which it develops. My
+                        work on this
+                        topic has included so far:</p>
+
+                    <ul>
+                        <li>
+                            Benaiges, K.*, Santesteban, M. & <b>Cano-Sánchez,
+                                V.*</b> (in
+                            prep.) <i>Does bilingualism shape predictive
+                                language processing?
+                                Evidence from lexical and morphosyntactic
+                                cues.</i>
+                        </li>
+                        <li>
+                            <b>Cano-Sánchez, V.</b>, Vida-Castro, M. &
+                            Villena-Ponsoda, J.A.
+                            (in prep.) A sociolinguistic study on the current
+                            situation of the
+                            Valencian language in Alicante, Valencian Community.
+                            First
+                            approach to linguistic uses and attitudes in
+                            Mutxamel. [A version
+                            of this study currently available at:
+                            <a
+                                href="https://riuma.uma.es/xmlui/handle/10630/15038"
+                                target="_blank"
+                                rel="noopener">https://riuma.uma.es/xmlui/handle/10630/15038</a>]
+                        </li>
+                    </ul>
+
+                    <h3>3. Language and neurodegenerative diseases</h3>
+                    <p>While much of my work has focused on language in healthy
+                        aging, I
+                        am also deeply interested in how neurodegenerative
+                        diseases affect
+                        linguistic outcomes. In future studies, I plan to extend
+                        my research
+                        to conditions such as Mild Cognitive Impairment,
+                        Alzheimer’s
+                        disease, and aphasias, combining behavioral measures
+                        with fMRI, MEG,
+                        and EEG to examine both performance outcomes and the
+                        neural
+                        mechanisms underlying language decline. A particular
+                        focus will be
+                        placed on grammatical processing, which has been less
+                        studied in
+                        healthy aging but is critically affected in certain
+                        neurodegenerative conditions. For example, non-fluent
+                        progressive
+                        aphasia, characterized by prominent morphosyntactic
+                        difficulties,
+                        provides a unique opportunity to explore patterns that
+                        relate
+                        directly to the predictive mechanisms and individual
+                        differences
+                        identified in my thesis. This line of research will also
+                        allow me to
+                        investigate which aspects of linguistic experience and
+                        cognitive
+                        resources may serve as protective factors in
+                        pathological aging.</p>
+
+                    <div class="pie">
+                        Last update: 20/09/2025.<br />
+                        2025 Victoria Cano-Sánchez. All rights reserved.
+                    </div>
+                </div>
+            </section>
+
+            <!-- MEDIA -->
+            <section class="w3-container seccion" id="medios">
+                <div class="contenido">
+                    <h1><b>Media</b></h1>
+                    <p>2025: Opinion article. <i>Alicante Plaza</i>. “El idioma
+                        secreto
+                        del cerebro adulto: ¿anticipamos el lenguaje en la
+                        vejez?” (Available
+                        <a
+                            href="https://alicanteplaza.es/alicanteplaza/Vivir/el-idioma-secreto-del-cerebro-adulto-anticipamos-el-lenguaje-en-la-vejez"
+                            target="_blank" rel="noopener">here</a> in
+                        Spanish).</p>
+                    <p>2025: Interview. <i>EITB Radio Euskadi</i>, “La mecánica
+                        del
+                        caracol: Lenguaje y envejecimiento” (Available
+                        <a href="#" target="_blank" rel="noopener">here</a> in
+                        Spanish ).</p>
+                    <p>2025: Interview. <i>ONDA CERO Bizkaia</i> “Más de uno”
+                        (Available
+                        <a
+                            href="https://www.eitb.eus/es/nahieran/radio/radio-euskadi/la-mecanica-del-caracol/detalle/10024059/"
+                            target="_blank" rel="noopener">here</a> in
+                        Spanish).</p>
+                    <p>2025: Article published at <i>Archiletras: Journal of
+                            Language</i>. Bi-monthly scientific magazine
+                        (Available
+                        <a
+                            href="#"
+                            target="_blank" rel="noopener">here</a> in
+                        Spanish).</p>
+                    <p>2025: Interview at <i>radio esRADIO Valencia:</i>.
+                        “Language processing”
+                        (Available
+                        <a
+                            href="#"
+                            target="_blank" rel="noopener">here</a> in
+                        Spanish).</p>
+                    <p>2024: Research coverage. <i>Senior Class Magazine</i>
+                        nº5, Spring.
+                        “How does our brain age?” (Available
+                        <a
+                            href="https://www.ehu.eus/HEB/wp-content/uploads/2024/11/senior-class-5.pdf"
+                            target="_blank" rel="noopener">here</a> in
+                        Spanish).</p>
+                    <p>2023: Radio interview at <i>ONDA CERO Vitoria</i>, “La
+                        Brújula de
+                        Euskadi” (Available
+                        <a
+                            href="https://www.ondacero.es/emisoras/pais-vasco/audios-podcast/la-brujula/brujula-euskadi-13122023_202312136579fc7a29f3180001750a67.html?fbclid=IwY2xjawIZX4hleHRuA2FlbQIxMQABHQzETQR6sOMi4ZZt_A6_G4HCNJ-iFeHoao-nLvztvyi7XTeOGHv5JU-QLw_aem_bq-9SUGzAfqhM-_WT-P1VQ"
+                            target="_blank" rel="noopener">here</a> in Spanish.
+                        From: 4.00).</p>
+
+                    <div class="pie">
+                        Last update: 20/09/2025.<br />
+                        2025 Victoria Cano-Sánchez. All rights reserved.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="overlay" class="w3-overlay" onclick="w3_close()"
+            aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="index.js"></script>
+    </body>
+</html>

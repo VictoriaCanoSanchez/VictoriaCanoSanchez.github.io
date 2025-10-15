@@ -1,0 +1,208 @@
+:root {
+  --ancho-barra: 280px;
+  --max-contenido: 1200px;
+  --gris-claro: #f2f2f2;  /* color del menú (sidebar/topbar) */
+  --fondo: #ffffff;       /* fondo de páginas */
+  --texto: #333333;
+}
+
+/* Tipografías base */
+body, h1, h2, h3, h4, h5, p {
+  font-family: "Times New Roman", serif;
+}
+
+/* Fondo y texto global */
+html, body {
+  height: 100%;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+/* ----- LAYOUT ----- */
+.barra-lateral {
+  height: 100%;
+  width: var(--ancho-barra);
+  font-weight: bold;
+  background: var(--gris-claro) !important;
+  border-right: 1px solid #e5e5e5;
+}
+
+#barra {
+  width: var(--ancho-barra) !important;
+  left: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1002;
+  overflow-y: auto;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;              /* cubrir sin deformar */
+  object-position: 50% 20%;       /* sube un poco el foco para no cortar frente */
+  margin: 20px auto 10px;
+  display: block;
+}
+
+.iconos-contacto {
+  margin-bottom: 15px;
+}
+.iconos-contacto a {
+  margin: 0 8px;
+  font-size: 22px;
+  color: grey;
+  text-decoration: none;
+}
+.iconos-contacto a:hover {
+  color: black;
+}
+
+.principal {
+  margin-left: var(--ancho-barra) !important;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 40px;
+}
+
+.contenido {
+  max-width: var(--max-contenido) !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.seccion {
+  display: none;
+  padding: 48px 0;
+  min-height: calc(100vh - 80px);
+  background: var(--fondo) !important; /* fuerza fondo blanco */
+}
+
+.enlace-menu {
+  color: #444;
+}
+.enlace-menu:hover,
+.enlace-menu[aria-current="page"] {
+  background: #e7e7e7;
+  color: #000;
+  font-weight: 700;
+}
+
+.pie {
+  line-height: 1.6;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ----- TOPBAR (MÓVIL) ----- */
+.topbar {
+  display: none;
+  background: var(--gris-claro) !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Overlay global (por debajo de la barra) */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1000;
+  display: none;
+}
+
+/* ===== HERO para móvil y tablet ===== */
+.mobile-hero {
+  display: none;           /* visible en <= 1024px */
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 32px 0;         /* aire superior/inferior */
+}
+.mobile-title {
+  display: none;           /* visible en <= 1024px */
+  margin: 0 0 12px 0;
+  font-size: clamp(1.8rem, 3.8vw, 2.2rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+.mobile-hero__img {
+  width: clamp(130px, 28vw, 180px);
+  height: clamp(130px, 28vw, 180px);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 20%;  /* evita “cortar la cabeza” */
+  display: inline-block;
+  margin: 10px auto 8px;
+}
+.mobile-hero__name {
+  font-size: clamp(1.25rem, 3.3vw, 1.6rem);
+  font-weight: 800;
+  margin: 0 0 10px 0;
+}
+
+/* ----- MÓVIL ----- */
+@media (max-width:768px) {
+  .principal {
+    margin-left: 0 !important;
+    padding: 20px;
+  }
+
+  .topbar {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+  }
+
+  body.drawer-open .principal {
+    filter: blur(2px);
+    pointer-events: none;
+  }
+  body.drawer-open #overlay {
+    display: block;
+  }
+  body.drawer-open #barra {
+    width: 100vw !important;
+    box-shadow: none;
+  }
+
+  .foto-perfil {
+    margin-top: 80px !important; /* aire extra sólo en móvil */
+  }
+
+  /* Mostrar hero y ocultar título de escritorio en móvil */
+  .mobile-hero { display: block; }
+  .mobile-title { display: block; }
+  .desktop-title { display: none; }
+}
+
+/* ----- TABLET ----- */
+@media (min-width:769px) and (max-width:1024px) {
+  /* Mostrar también el hero en tablet y ocultar el title de escritorio */
+  .mobile-hero { display: block; }
+  .mobile-title { display: block; }
+  .desktop-title { display: none; }
+
+  .principal { padding: 0 40px; }
+}
+
+/* ----- DESKTOP ----- */
+@media (min-width:769px) {
+  .topbar { display: none !important; }
+  #overlay { display: none !important; }
+  #barra { display: block !important; }
+}
+
+/* Más aire en pantallas grandes */
+@media (min-width:1024px) {
+  .principal { padding: 0 80px; }
+}
+@media (min-width:1400px) {
+  .principal { padding: 0 110px; }
+}
