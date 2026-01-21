@@ -18,6 +18,12 @@ html, body {
   color: var(--texto);
 }
 
+/* Fondo blanco para menú lateral y topbar */
+.w3-sidebar,
+.topbar {
+  background-color: var(--fondo) !important;
+}
+
 /* ----- LAYOUT ----- */
 .barra-lateral {
   height: 100%;
@@ -206,3 +212,4 @@ html, body {
 @media (min-width:1400px) {
   .principal { padding: 0 110px; }
 }
+
