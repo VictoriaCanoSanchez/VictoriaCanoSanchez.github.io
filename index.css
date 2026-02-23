@@ -1,7 +1,7 @@
 :root {
   --ancho-barra: 280px;
   --max-contenido: 1200px;
-  --gris-claro: #f2f2f2;  /* color del menú (sidebar/topbar) */
+  --gris-claro: #ffffff;  /* color del menú (sidebar/topbar) */
   --fondo: #ffffff;       /* fondo de páginas */
   --texto: #333333;
 }
@@ -212,4 +212,5 @@ html, body {
 @media (min-width:1400px) {
   .principal { padding: 0 110px; }
 }
+
 
